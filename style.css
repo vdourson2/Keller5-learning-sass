@@ -1,0 +1,70 @@
+@-webkit-keyframes extend {
+  from {
+    height: 200px;
+    margin-top: 0px;
+  }
+  to {
+    height: 350px;
+    margin-top: -150px;
+  }
+}
+@keyframes extend {
+  from {
+    height: 200px;
+    margin-top: 0px;
+  }
+  to {
+    height: 350px;
+    margin-top: -150px;
+  }
+}
+body {
+  background-color: rgb(204, 204, 240);
+}
+
+.cadre1 {
+  width: 400px;
+  margin: auto;
+}
+.cadre1 img {
+  width: inherit;
+  margin: inherit;
+}
+.cadre1 .date {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  color: white;
+  margin-top: -280px;
+  margin-left: 300px;
+}
+.cadre1 .contenu_anime {
+  height: 200px;
+  position: static;
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  z-index: 0;
+  position: relative;
+}
+.cadre1 .contenu_anime .bouton_photo {
+  background-color: red;
+  width: 100px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+.cadre1 .contenu_anime:hover {
+  -webkit-animation: extend 1s;
+          animation: extend 1s;
+}
+.cadre1 .contenu_anime h2 {
+  color: red;
+}
+.cadre1 .contenu_anime p {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
