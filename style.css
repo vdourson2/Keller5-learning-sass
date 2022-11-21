@@ -1,23 +1,13 @@
-@-webkit-keyframes extend {
-  from {
-    height: 200px;
-    margin-top: 0px;
-  }
-  to {
-    height: 350px;
-    margin-top: -150px;
-  }
-}
-@keyframes extend {
-  from {
-    height: 200px;
-    margin-top: 0px;
-  }
-  to {
-    height: 350px;
-    margin-top: -150px;
-  }
-}
+/*@keyframes extend {
+    from{
+        height:200px;
+        margin-top:0px;
+    }
+    to {
+        height:350px;   
+        margin-top:-150px;     
+    }
+}*/
 body {
   background-color: rgb(204, 204, 240);
 }
@@ -49,6 +39,7 @@ body {
   padding: 10px 20px 20px 20px;
   z-index: 0;
   position: relative;
+  margin-top: 0px;
 }
 .cadre1 .contenu_anime .bouton_photo {
   background-color: red;
@@ -58,13 +49,15 @@ body {
   padding: 10px;
   font-weight: bold;
 }
-.cadre1 .contenu_anime:hover {
-  -webkit-animation: extend 1s;
-          animation: extend 1s;
-}
 .cadre1 .contenu_anime h2 {
   color: red;
 }
 .cadre1 .contenu_anime p {
   display: none;
+}
+.cadre1:hover .contenu_anime {
+  height: 350px;
+  margin-top: -150px;
+  transition-property: all;
+  transition-duration: 2s;
 }/*# sourceMappingURL=style.css.map */
